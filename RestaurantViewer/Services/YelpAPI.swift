@@ -6,7 +6,7 @@ protocol RestaurantAPIProtocol {
 }
 
 final class YelpAPI: RestaurantAPIProtocol {
-    static let apiKey = ""
+    static let apiKey = APIConfig.apiKey
     
     func fetchRestaurants(latitude: Double, longitude: Double, limit: Int, offset: Int, completion: @escaping ([Restaurant]) -> Void) {
         let urlString = "https://api.yelp.com/v3/businesses/search?term=restaurants&latitude=\(latitude)&longitude=\(longitude)&limit=\(limit)&offset=\(offset)"
