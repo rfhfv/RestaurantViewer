@@ -6,7 +6,7 @@ struct Restaurant: Decodable, Identifiable {
     let imageUrl: String
     let rating: Double
     
-    enum CondingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case id, name, rating
         case imageUrl = "image_url"
     }

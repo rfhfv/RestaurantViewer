@@ -4,7 +4,7 @@ import SwiftUI
 struct RestaurantViewerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RestaurantCardsView()
         }
     }
 }
