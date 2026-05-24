@@ -13,6 +13,7 @@
 		8458F17A2FC31F10006BF2AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8458F1792FC31F10006BF2AD /* Preview Assets.xcassets */; };
 		84B8F6CB2FC3208400E5938B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8F6CA2FC3208400E5938B /* Restaurant.swift */; };
 		84B8F6CD2FC3210600E5938B /* YelpSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8F6CC2FC3210600E5938B /* YelpSearchResponse.swift */; };
+		84B8F6D02FC322E300E5938B /* YelpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8F6CF2FC322E300E5938B /* YelpAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8458F1792FC31F10006BF2AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84B8F6CA2FC3208400E5938B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		84B8F6CC2FC3210600E5938B /* YelpSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchResponse.swift; sourceTree = "<group>"; };
+		84B8F6CF2FC322E300E5938B /* YelpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				84B8F6C92FC3206000E5938B /* Models */,
+				84B8F6CE2FC322B600E5938B /* Services */,
 				8458F1722FC31F0E006BF2AD /* RestaurantViewerApp.swift */,
 				8458F1742FC31F0E006BF2AD /* ContentView.swift */,
 				8458F1762FC31F10006BF2AD /* Assets.xcassets */,
@@ -79,6 +82,14 @@
 				84B8F6CC2FC3210600E5938B /* YelpSearchResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		84B8F6CE2FC322B600E5938B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84B8F6CF2FC322E300E5938B /* YelpAPI.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 				8458F1732FC31F0E006BF2AD /* RestaurantViewerApp.swift in Sources */,
 				84B8F6CD2FC3210600E5938B /* YelpSearchResponse.swift in Sources */,
 				84B8F6CB2FC3208400E5938B /* Restaurant.swift in Sources */,
+				84B8F6D02FC322E300E5938B /* YelpAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
