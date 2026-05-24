@@ -50,7 +50,7 @@ I spent about 4-5 hours. I worked a bit with LocationManager, so understanding d
 
 - What trade-offs did you make?
   
-I focused on card stack UI, smooth animations, and MVVM architecture. I skipped full error handling, unit tests, and pull-to-refresh due to time.
+I focused on card stack UI, smooth animations, and MVVM architecture. I skipped full error handling, and pull-to-refresh due to time.
 
 - Extra improvements?
   
