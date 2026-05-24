@@ -1,8 +1,23 @@
-//
-//  LocationMananger.swift
-//  RestaurantViewer
-//
-//  Created by admin on 24.05.2026.
-//
+import CoreLocation
+import Combine
 
-import Foundation
+final class LocationManager: NSObject, ObservableObject {
+    private let manager = CLLocationManager()
+    @Published var location: CLLocationCoordinate2D?
+    
+    override init() {
+        super.init()
+        manager.delegate = self
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+    }
+}
+
+extension LocationManager: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let loc = locations.first?.coordinate {
+            location = loc
+            manager.stopUpdatingLocation()
+        }
+    }
+}
